@@ -1,5 +1,9 @@
 # Astro Starter Kit: Basics
 
+Colores:
+Amarillo: #e8e33c
+Celeste: #298f98
+
 ```sh
 npm create astro@latest -- --template basics
 ```
