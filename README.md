@@ -4,6 +4,10 @@ Colores:
 Amarillo: #e8e33c
 Celeste: #298f98
 
+Font Family: (Font face dentro de Layouts)
+Gotham-Bold (Utilizada en estilos globales Layouts)
+Gotham-Light (Como utilidad dentro de tailwind)
+
 ```sh
 npm create astro@latest -- --template basics
 ```

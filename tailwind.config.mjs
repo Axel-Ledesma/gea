@@ -3,6 +3,9 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      fontFamily: {
+        gothamlight: "GothamLight, system-ui",
+      },
       backgroundImage: {
         "abrir-menu": "url('../svg/menu.svg')",
         "cerrar-menu": "url('../svg/x.svg')",
