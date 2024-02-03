@@ -24,6 +24,20 @@ const { description } = Astro.props;
 </html>
 <style is:global>
   html {
-    font-family: system-ui, sans-serif;
+    font-family: "GothamBold", "GothamLight", system-ui;
+  }
+  @font-face {
+    font-family: "GothamBold";
+    src: url("./fonts/Gotham-Bold.woff2") format("opentype");
+    font-style: normal;
+    font-display: swap;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "GothamLight";
+    src: url("./fonts/Gotham-Light.woff2") format("opentype");
+    font-style: normal;
+    font-display: swap;
+    font-weight: normal;
   }
 </style>

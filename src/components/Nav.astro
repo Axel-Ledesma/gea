@@ -1,23 +1,139 @@
 <header>
-  <nav class="h-20 px-8 flex mx-auto items-center md:justify-center w-full">
+  <nav
+    class="h-20 px-8 flex mx-auto w-full justify-end items-center fixed md:justify-center md:mt-5 md:gap-x-10"
+  >
     <input type="checkbox" id="menu" class="peer hidden" />
     <label
       for="menu"
-      class="bg-abrir-menu size-8 bg-cover bg-center cursor-pointer peer-checked:bg-cerrar-menu transition-all duration-200 z-40 md:hidden"
+      class="flex justify-end bg-abrir-menu size-9 bg-cover bg-center cursor-pointer peer-checked:bg-cerrar-menu transition-all duration-200 z-40 md:hidden"
     ></label>
+    <img class="size-20 hidden md:block" src="./logo.webp" alt="" />
     <div
-      class="fixed inset-0 bg-gradient-to-b from-amarillo/70 to-celeste translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none"
+      class="fixed inset-0 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none"
     >
       <ul
-        class="absolute inset-x-0 w-full h-max grid gap-5 mx-auto p-10 text-center bg-celeste text-amarillo font-bold shadow-2xl md:w-max md:p-0 md:grid-flow-col md:static md:bg-transparent md:shadow-none md:text-black z-50"
+        class="absolute inset-x-0 w-full h-max grid gap-1 mx-auto pt-20 p-10 text-start bg-celeste text-amarillo text-lg font-bold shadow-2xl md:w-max md:p-0 md:grid-flow-col md:static md:bg-transparent md:shadow-none md:text-black md:max-lg:text-sm md:gap-x-6 z-50"
       >
-        <li><a href="">Home</a></li>
-        <li><a href="">Nosotros</a></li>
-        <li><a href="">Qué hacemos</a></li>
-        <li><a href="">Clientes</a></li>
-        <li><a href="">Buena Madera</a></li>
-        <li><a href="">Cursos</a></li>
-        <li><a href="">Contacto</a></li>
+        <li><a class="text-white md:text-celeste" href="">Home</a></li>
+        <li>
+          <a
+            class="hover:text-white md:hover:text-celeste"
+            href="https://geasustentable.com.ar/nosotros/"
+            target="_blank"
+            rel="noopener noreferrer">Nosotros</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-white md:hover:text-celeste"
+            href="https://geasustentable.com.ar/que-hacemos/"
+            target="_blank"
+            rel="noopener noreferrer">Qué hacemos</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-white md:hover:text-celeste"
+            href="https://geasustentable.com.ar/clientes/"
+            target="_blank"
+            rel="noopener noreferrer">Clientes</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-white md:hover:text-celeste"
+            href="https://www.geabuenamadera.com/"
+            target="_blank"
+            rel="noopener noreferrer">Buena Madera</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-white md:hover:text-celeste"
+            href="https://geacursos.wisboo.com/home"
+            target="_blank"
+            rel="noopener noreferrer">Cursos</a
+          >
+        </li>
+        <li>
+          <a
+            class="hover:text-white md:hover:text-celeste"
+            href="https://geasustentable.com.ar/contactanos/"
+            target="_blank"
+            rel="noopener noreferrer">Contacto</a
+          >
+        </li>
+        <div>
+          <p class="[&>a]:px-3 md:hidden">
+            Reportes de Sustentabilidad: <br />
+            <a
+              href="/pdf/reporte_2021.pdf"
+              target="_blank"
+              rel="noopener noreferrer "
+              class="border-2 border-black hover:text-white">2021</a
+            >
+            <a
+              href="/pdf/reporte_2020.pdf"
+              target="_blank"
+              rel="noopener noreferrer "
+              class="border-2 border-black hover:text-white">2020</a
+            >
+            <a
+              href="/pdf/reporte_2019.pdf"
+              target="_blank"
+              rel="noopener noreferrer "
+              class="border-2 border-black hover:text-white">2019</a
+            >
+            <a
+              href="/pdf/reporte_2018.pdf"
+              target="_blank"
+              rel="noopener noreferrer "
+              class="border-2 border-black hover:text-white">2018</a
+            >
+            <a
+              href="/pdf/reporte_2017.pdf"
+              target="_blank"
+              rel="noopener noreferrer "
+              class="border-2 border-black hover:text-white">2017</a
+            >
+          </p>
+        </div>
+        <div class="md:hidden">
+          <ul class="flex pt-10 gap-x-2">
+            <li>
+              <a
+                href="https://www.facebook.com/geasustentable/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./mobile/fb_mobile.png" alt="" /></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/gea-sustentable/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./mobile/in_mobile.png" alt="" /></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/geasustentable/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./mobile/ig_mobile.png" alt="" /></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCIJIhopzRToi0X_kDJuI2SQ?view_as=subscriber"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="./mobile/yt_mobile.png" alt="" /></a
+              >
+            </li>
+          </ul>
+        </div>
       </ul>
     </div>
   </nav>

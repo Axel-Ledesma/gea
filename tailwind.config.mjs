@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "abrir-menu": "url('../menu.svg')",
-        "cerrar-menu": "url('../x.svg')",
+        "abrir-menu": "url('../svg/menu.svg')",
+        "cerrar-menu": "url('../svg/x.svg')",
+        "gea-desktop": "url('../desktop/gea_desktop.gif')",
       },
       colors: {
         amarillo: "#e8e33c",
