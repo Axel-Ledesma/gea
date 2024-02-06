@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         gothamlight: "GothamLight, system-ui",
+        gothambold: "GothamBold, system-ui",
       },
       backgroundImage: {
         "abrir-menu": "url('../svg/menu.svg')",

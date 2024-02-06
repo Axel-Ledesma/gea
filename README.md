@@ -1,8 +1,8 @@
 # Astro Starter Kit: Basics
 
 Colores:
-Amarillo: #e8e33c
-Celeste: #298f98
+Amarillo: #e8e33c rgba(232, 227, 60, 1)
+Celeste: #298f98 rgba(41, 143, 152, 1)
 
 Font Family: (Font face dentro de Layouts)
 Gotham-Bold (Utilizada en estilos globales Layouts)
