@@ -7,12 +7,18 @@
       for="menu"
       class="flex justify-end bg-abrir-menu size-9 bg-cover bg-center cursor-pointer peer-checked:bg-cerrar-menu transition-all duration-200 z-40 md:hidden"
     ></label>
-    <img class="size-20 hidden md:block lg:size-24" src="./logo.webp" alt="" />
+    <img
+      id="logo"
+      class="size-20 hidden md:block lg:size-24"
+      src="./logo.webp"
+      alt=""
+    />
     <div
       class="fixed inset-0 translate-x-full peer-checked:translate-x-0 transition-transform md:static md:translate-x-0 md:bg-none"
     >
       <ul
-        class="absolute inset-x-0 w-full h-max grid gap-1 mx-auto pt-20 p-10 text-start bg-celeste text-amarillo text-lg font-bold shadow-2xl md:w-max md:p-0 md:grid-flow-col md:static md:bg-transparent md:shadow-none md:text-black md:max-lg:text-sm md:gap-x-6 z-50"
+        id="nav"
+        class="absolute inset-x-0 w-full h-max grid gap-1 mx-auto pt-20 p-10 text-start bg-celeste text-amarillo text-lg font-bold shadow-2xl md:w-max md:p-0 md:grid-flow-col md:static md:bg-transparent md:shadow-none md:text-black md:max-lg:text-sm md:gap-x-6 z-50 [&>li>a]:duration-300"
       >
         <li><a class="text-white md:text-celeste" href="">Home</a></li>
         <li>
@@ -138,3 +144,57 @@
     </div>
   </nav>
 </header>
+
+<style>
+  #logo {
+    animation: hidden-logo linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100px;
+  }
+  #nav {
+    animation: enhance-nav linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 200px;
+  }
+  @keyframes enhance-nav {
+    to {
+      align-items: center;
+      height: 35px;
+      background-color: rgba(232, 227, 60, 0.6);
+      backdrop-filter: blur(5px);
+      font-size: 16px;
+      margin-bottom: 30px;
+      margin-right: 80px;
+      border-radius: 5px;
+      padding-inline: 10px;
+    }
+  }
+  @keyframes hidden-logo {
+    to {
+      opacity: 0;
+    }
+  }
+</style>
+<script>
+  function ajustarNav() {
+    const nav = document.getElementById("nav");
+
+    if (window.innerWidth < 766) {
+      if (nav.getAttribute("id") !== null) {
+        nav.removeAttribute("id");
+      }
+    } else {
+      if (nav.getAttribute("id") === null) {
+        nav.setAttribute("id", "nav");
+      }
+    }
+  }
+
+  // Llama a la función inicialmente para ajustar el estado según el tamaño de la ventana al cargar la página
+  ajustarNav();
+
+  // Agrega un event listener para el evento resize
+  window.addEventListener("resize", function () {
+    ajustarNav();
+  });
+</script>

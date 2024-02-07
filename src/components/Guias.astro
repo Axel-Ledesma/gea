@@ -37,7 +37,7 @@ import Hoja from "./icons/Hoja.astro";
     </h3>
     <div class="flex justify-center space-x-5 py-4">
       <a
-        class="flex bg-celeste text-amarillo items-center px-4 py-2 hover:bg-white hover:text-celeste hover:duration-300 xl:text-lg 2xl:text-xl"
+        class="flex bg-celeste text-amarillo items-center px-4 py-2 hover:bg-white hover:text-celeste duration-300 xl:text-lg 2xl:text-xl"
         href="/pdf/compostaje.pdf"
         target="_blank"
         rel="noopener noreferrer"
@@ -46,7 +46,7 @@ import Hoja from "./icons/Hoja.astro";
         Compostar
       </a>
       <a
-        class="flex bg-celeste text-amarillo items-center px-6 py-2 hover:bg-white hover:text-celeste hover:duration-300 xl:text-lg 2xl:text-xl"
+        class="flex bg-celeste text-amarillo items-center px-6 py-2 hover:bg-white hover:text-celeste duration-300 xl:text-lg 2xl:text-xl"
         href="/pdf/reciclar.pdf"
         target="_blank"
         rel="noopener noreferrer"
@@ -102,9 +102,8 @@ import Hoja from "./icons/Hoja.astro";
 
 <style>
   #celeste {
-    animation: reveal 4s linear backwards;
-    animation-timeline: scroll();
-    animation-range: entry 10% cover 20%;
+    animation: reveal 2s linear both;
+    animation-timeline: view();
   }
 
   @keyframes reveal {
